@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from peer import chaincode_event_pb2 as peer_dot_chaincode__event__pb2
-from peer import proposal_pb2 as peer_dot_proposal__pb2
+from fabric_protos_python.peer import chaincode_event_pb2 as peer_dot_chaincode__event__pb2
+from fabric_protos_python.peer import proposal_pb2 as peer_dot_proposal__pb2
 from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
 
 

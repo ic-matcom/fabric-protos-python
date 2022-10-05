@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from common import policies_pb2 as common_dot_policies__pb2
+from fabric_protos_python.common import policies_pb2 as common_dot_policies__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17\x63ommon/collection.proto\x12\x06\x63ommon\x1a\x15\x63ommon/policies.proto\"G\n\x17\x43ollectionConfigPackage\x12(\n\x06\x63onfig\x18\x01 \x03(\x0b\x32\x18.common.CollectionConfig:\x02\x18\x01\"e\n\x10\x43ollectionConfig\x12\x42\n\x18static_collection_config\x18\x01 \x01(\x0b\x32\x1e.common.StaticCollectionConfigH\x00:\x02\x18\x01\x42\t\n\x07payload\"\xa2\x02\n\x16StaticCollectionConfig\x12\x0c\n\x04name\x18\x01 \x01(\t\x12:\n\x12member_orgs_policy\x18\x02 \x01(\x0b\x32\x1e.common.CollectionPolicyConfig\x12\x1b\n\x13required_peer_count\x18\x03 \x01(\x05\x12\x1a\n\x12maximum_peer_count\x18\x04 \x01(\x05\x12\x15\n\rblock_to_live\x18\x05 \x01(\x04\x12\x18\n\x10member_only_read\x18\x06 \x01(\x08\x12\x19\n\x11member_only_write\x18\x07 \x01(\x08\x12\x35\n\x12\x65ndorsement_policy\x18\x08 \x01(\x0b\x32\x19.common.ApplicationPolicy:\x02\x18\x01\"d\n\x16\x43ollectionPolicyConfig\x12;\n\x10signature_policy\x18\x01 \x01(\x0b\x32\x1f.common.SignaturePolicyEnvelopeH\x00:\x02\x18\x01\x42\t\n\x07payloadBV\n$org.hyperledger.fabric.protos.commonZ.github.com/hyperledger/fabric-protos-go/commonb\x06proto3')

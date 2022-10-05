@@ -3,7 +3,7 @@
 import grpc
 
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
-from peer import snapshot_pb2 as peer_dot_snapshot__pb2
+from fabric_protos_python.peer import snapshot_pb2 as peer_dot_snapshot__pb2
 
 
 class SnapshotStub(object):
