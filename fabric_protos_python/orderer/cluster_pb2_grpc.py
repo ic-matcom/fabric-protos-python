@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from orderer import cluster_pb2 as orderer_dot_cluster__pb2
+from fabric_protos_python.orderer import cluster_pb2 as orderer_dot_cluster__pb2
 
 
 class ClusterStub(object):

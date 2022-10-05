@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from common import policies_pb2 as common_dot_policies__pb2
+from fabric_protos_python.common import policies_pb2 as common_dot_policies__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11peer/policy.proto\x12\x06protos\x1a\x15\x63ommon/policies.proto\"\x83\x01\n\x11\x41pplicationPolicy\x12;\n\x10signature_policy\x18\x01 \x01(\x0b\x32\x1f.common.SignaturePolicyEnvelopeH\x00\x12)\n\x1f\x63hannel_config_policy_reference\x18\x02 \x01(\tH\x00\x42\x06\n\x04TypeBR\n\"org.hyperledger.fabric.protos.peerZ,github.com/hyperledger/fabric-protos-go/peerb\x06proto3')

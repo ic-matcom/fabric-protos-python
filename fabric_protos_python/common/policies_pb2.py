@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from msp import msp_principal_pb2 as msp_dot_msp__principal__pb2
+from fabric_protos_python.msp import msp_principal_pb2 as msp_dot_msp__principal__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x15\x63ommon/policies.proto\x12\x06\x63ommon\x1a\x17msp/msp_principal.proto\"k\n\x06Policy\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x0c\"D\n\nPolicyType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\r\n\tSIGNATURE\x10\x01\x12\x07\n\x03MSP\x10\x02\x12\x11\n\rIMPLICIT_META\x10\x03\"{\n\x17SignaturePolicyEnvelope\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12%\n\x04rule\x18\x02 \x01(\x0b\x32\x17.common.SignaturePolicy\x12(\n\nidentities\x18\x03 \x03(\x0b\x32\x14.common.MSPPrincipal\"\x9f\x01\n\x0fSignaturePolicy\x12\x13\n\tsigned_by\x18\x01 \x01(\x05H\x00\x12\x32\n\x08n_out_of\x18\x02 \x01(\x0b\x32\x1e.common.SignaturePolicy.NOutOfH\x00\x1a;\n\x06NOutOf\x12\t\n\x01n\x18\x01 \x01(\x05\x12&\n\x05rules\x18\x02 \x03(\x0b\x32\x17.common.SignaturePolicyB\x06\n\x04Type\"\x7f\n\x12ImplicitMetaPolicy\x12\x12\n\nsub_policy\x18\x01 \x01(\t\x12-\n\x04rule\x18\x02 \x01(\x0e\x32\x1f.common.ImplicitMetaPolicy.Rule\"&\n\x04Rule\x12\x07\n\x03\x41NY\x10\x00\x12\x07\n\x03\x41LL\x10\x01\x12\x0c\n\x08MAJORITY\x10\x02\"\x87\x01\n\x11\x41pplicationPolicy\x12;\n\x10signature_policy\x18\x01 \x01(\x0b\x32\x1f.common.SignaturePolicyEnvelopeH\x00\x12)\n\x1f\x63hannel_config_policy_reference\x18\x02 \x01(\tH\x00:\x02\x18\x01\x42\x06\n\x04TypeBV\n$org.hyperledger.fabric.protos.commonZ.github.com/hyperledger/fabric-protos-go/commonb\x06proto3')

@@ -2,8 +2,8 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from common import common_pb2 as common_dot_common__pb2
-from peer import events_pb2 as peer_dot_events__pb2
+from fabric_protos_python.common import common_pb2 as common_dot_common__pb2
+from fabric_protos_python.peer import events_pb2 as peer_dot_events__pb2
 
 
 class DeliverStub(object):

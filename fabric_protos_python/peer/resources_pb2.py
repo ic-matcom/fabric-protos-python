@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from common import configtx_pb2 as common_dot_configtx__pb2
+from fabric_protos_python.common import configtx_pb2 as common_dot_configtx__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x14peer/resources.proto\x12\x06protos\x1a\x15\x63ommon/configtx.proto\"4\n\x13\x43haincodeIdentifier\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0f\n\x07version\x18\x02 \x01(\t\"5\n\x13\x43haincodeValidation\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08\x61rgument\x18\x02 \x01(\x0c\"*\n\x08VSCCArgs\x12\x1e\n\x16\x65ndorsement_policy_ref\x18\x01 \x01(\t\"$\n\x14\x43haincodeEndorsement\x12\x0c\n\x04name\x18\x01 \x01(\t\"^\n\nConfigTree\x12&\n\x0e\x63hannel_config\x18\x01 \x01(\x0b\x32\x0e.common.Config\x12(\n\x10resources_config\x18\x02 \x01(\x0b\x32\x0e.common.ConfigBR\n\"org.hyperledger.fabric.protos.peerZ,github.com/hyperledger/fabric-protos-go/peerb\x06proto3')
