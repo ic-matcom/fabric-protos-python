@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fabric-protos-python"
+version = "2.0"
+description = "Hyperledger Fabric gRPC and Protocol Buffer Bindings for python"
+authors = [
+    "Amalia Ibarra <amalianibarra@gmail.com>",
+    "Daniel Mena <danif-mena@yandex.com>",
+    "Kmilo Denis González <kmilo.denis.glez@yandex.com>",
+    "Luis Alejandro Lara <janesmith@example.org>",
+]
+maintainers = [
+    "Kmilo Denis González <kmilo.denis.glez@yandex.com>",
+    "Luis Alejandro Lara <janesmith@example.org>",
+]
+license = "Apache"
+readme = "README.md"
+homepage = "https://github.com/ic-matcom/fabric-protos-python"
+packages = [{include = "*/*.py"},{include = "*/**/*.py"}]
+
+# include = ["CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+grpclib = "^0.4.3"
+protobuf = "^4.21.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
