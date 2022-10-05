@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 from common import common_pb2 as common_dot_common__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10orderer/ab.proto\x12\x07orderer\x1a\x13\x63ommon/common.proto\"A\n\x11\x42roadcastResponse\x12\x1e\n\x06status\x18\x01 \x01(\x0e\x32\x0e.common.Status\x12\x0c\n\x04info\x18\x02 \x01(\t\"\x0c\n\nSeekNewest\"\x0c\n\nSeekOldest\"\x1f\n\rSeekSpecified\x12\x0e\n\x06number\x18\x01 \x01(\x04\"\x91\x01\n\x0cSeekPosition\x12%\n\x06newest\x18\x01 \x01(\x0b\x32\x13.orderer.SeekNewestH\x00\x12%\n\x06oldest\x18\x02 \x01(\x0b\x32\x13.orderer.SeekOldestH\x00\x12+\n\tspecified\x18\x03 \x01(\x0b\x32\x16.orderer.SeekSpecifiedH\x00\x42\x06\n\x04Type\"\xb4\x02\n\x08SeekInfo\x12$\n\x05start\x18\x01 \x01(\x0b\x32\x15.orderer.SeekPosition\x12#\n\x04stop\x18\x02 \x01(\x0b\x32\x15.orderer.SeekPosition\x12\x30\n\x08\x62\x65havior\x18\x03 \x01(\x0e\x32\x1e.orderer.SeekInfo.SeekBehavior\x12;\n\x0e\x65rror_response\x18\x04 \x01(\x0e\x32#.orderer.SeekInfo.SeekErrorResponse\"<\n\x0cSeekBehavior\x12\x15\n\x11\x42LOCK_UNTIL_READY\x10\x00\x12\x15\n\x11\x46\x41IL_IF_NOT_READY\x10\x01\"0\n\x11SeekErrorResponse\x12\n\n\x06STRICT\x10\x00\x12\x0f\n\x0b\x42\x45ST_EFFORT\x10\x01\"[\n\x0f\x44\x65liverResponse\x12 \n\x06status\x18\x01 \x01(\x0e\x32\x0e.common.StatusH\x00\x12\x1e\n\x05\x62lock\x18\x02 \x01(\x0b\x32\r.common.BlockH\x00\x42\x06\n\x04Type2\x8b\x01\n\x0f\x41tomicBroadcast\x12=\n\tBroadcast\x12\x10.common.Envelope\x1a\x1a.orderer.BroadcastResponse(\x01\x30\x01\x12\x39\n\x07\x44\x65liver\x12\x10.common.Envelope\x1a\x18.orderer.DeliverResponse(\x01\x30\x01\x42X\n%org.hyperledger.fabric.protos.ordererZ/github.com/hyperledger/fabric-protos-go/ordererb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10orderer/ab.proto\x12\x07orderer\x1a\x13\x63ommon/common.proto\"A\n\x11\x42roadcastResponse\x12\x1e\n\x06status\x18\x01 \x01(\x0e\x32\x0e.common.Status\x12\x0c\n\x04info\x18\x02 \x01(\t\"\x0c\n\nSeekNewest\"\x0c\n\nSeekOldest\"\x1f\n\rSeekSpecified\x12\x0e\n\x06number\x18\x01 \x01(\x04\"\x10\n\x0eSeekNextCommit\"\xc1\x01\n\x0cSeekPosition\x12%\n\x06newest\x18\x01 \x01(\x0b\x32\x13.orderer.SeekNewestH\x00\x12%\n\x06oldest\x18\x02 \x01(\x0b\x32\x13.orderer.SeekOldestH\x00\x12+\n\tspecified\x18\x03 \x01(\x0b\x32\x16.orderer.SeekSpecifiedH\x00\x12.\n\x0bnext_commit\x18\x04 \x01(\x0b\x32\x17.orderer.SeekNextCommitH\x00\x42\x06\n\x04Type\"\xb4\x02\n\x08SeekInfo\x12$\n\x05start\x18\x01 \x01(\x0b\x32\x15.orderer.SeekPosition\x12#\n\x04stop\x18\x02 \x01(\x0b\x32\x15.orderer.SeekPosition\x12\x30\n\x08\x62\x65havior\x18\x03 \x01(\x0e\x32\x1e.orderer.SeekInfo.SeekBehavior\x12;\n\x0e\x65rror_response\x18\x04 \x01(\x0e\x32#.orderer.SeekInfo.SeekErrorResponse\"<\n\x0cSeekBehavior\x12\x15\n\x11\x42LOCK_UNTIL_READY\x10\x00\x12\x15\n\x11\x46\x41IL_IF_NOT_READY\x10\x01\"0\n\x11SeekErrorResponse\x12\n\n\x06STRICT\x10\x00\x12\x0f\n\x0b\x42\x45ST_EFFORT\x10\x01\"[\n\x0f\x44\x65liverResponse\x12 \n\x06status\x18\x01 \x01(\x0e\x32\x0e.common.StatusH\x00\x12\x1e\n\x05\x62lock\x18\x02 \x01(\x0b\x32\r.common.BlockH\x00\x42\x06\n\x04Type2\x8b\x01\n\x0f\x41tomicBroadcast\x12=\n\tBroadcast\x12\x10.common.Envelope\x1a\x1a.orderer.BroadcastResponse(\x01\x30\x01\x12\x39\n\x07\x44\x65liver\x12\x10.common.Envelope\x1a\x18.orderer.DeliverResponse(\x01\x30\x01\x42X\n%org.hyperledger.fabric.protos.ordererZ/github.com/hyperledger/fabric-protos-go/ordererb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'orderer.ab_pb2', globals())
@@ -30,16 +30,18 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _SEEKOLDEST._serialized_end=143
   _SEEKSPECIFIED._serialized_start=145
   _SEEKSPECIFIED._serialized_end=176
-  _SEEKPOSITION._serialized_start=179
-  _SEEKPOSITION._serialized_end=324
-  _SEEKINFO._serialized_start=327
-  _SEEKINFO._serialized_end=635
-  _SEEKINFO_SEEKBEHAVIOR._serialized_start=525
-  _SEEKINFO_SEEKBEHAVIOR._serialized_end=585
-  _SEEKINFO_SEEKERRORRESPONSE._serialized_start=587
-  _SEEKINFO_SEEKERRORRESPONSE._serialized_end=635
-  _DELIVERRESPONSE._serialized_start=637
-  _DELIVERRESPONSE._serialized_end=728
-  _ATOMICBROADCAST._serialized_start=731
-  _ATOMICBROADCAST._serialized_end=870
+  _SEEKNEXTCOMMIT._serialized_start=178
+  _SEEKNEXTCOMMIT._serialized_end=194
+  _SEEKPOSITION._serialized_start=197
+  _SEEKPOSITION._serialized_end=390
+  _SEEKINFO._serialized_start=393
+  _SEEKINFO._serialized_end=701
+  _SEEKINFO_SEEKBEHAVIOR._serialized_start=591
+  _SEEKINFO_SEEKBEHAVIOR._serialized_end=651
+  _SEEKINFO_SEEKERRORRESPONSE._serialized_start=653
+  _SEEKINFO_SEEKERRORRESPONSE._serialized_end=701
+  _DELIVERRESPONSE._serialized_start=703
+  _DELIVERRESPONSE._serialized_end=794
+  _ATOMICBROADCAST._serialized_start=797
+  _ATOMICBROADCAST._serialized_end=936
 # @@protoc_insertion_point(module_scope)
