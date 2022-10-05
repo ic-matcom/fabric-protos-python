@@ -3,6 +3,7 @@ name = "fabric-protos-python"
 version = "2.0"
 description = "Hyperledger Fabric gRPC and Protocol Buffer Bindings for python"
 authors = [
+    "Institute of Cryptography of the Faculty of Mathematics and Computer Science at University of Havana <kmilo.denis.glez@yandex.com>",
     "Amalia Ibarra <amalianibarra@gmail.com>",
     "Daniel Mena <danif-mena@yandex.com>",
     "Kmilo Denis González <kmilo.denis.glez@yandex.com>",
@@ -15,7 +16,15 @@ maintainers = [
 license = "Apache"
 readme = "README.md"
 homepage = "https://github.com/ic-matcom/fabric-protos-python"
-packages = [{include = "*/*.py"},{include = "*/**/*.py"}]
+
+# the packages were defined explicitly because otherwise when the setup.py is
+# generated it only includes the common package.
+# ex:
+# packages = [{include = "*/*.py"},{include = "*/**/*.py"}]
+# -> It does not work well
+packages = [
+    {include = "fabric_protos_python"},
+]
 
 # include = ["CHANGELOG.md"]
 
