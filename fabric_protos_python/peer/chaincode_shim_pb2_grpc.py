@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from peer import chaincode_shim_pb2 as peer_dot_chaincode__shim__pb2
+from fabric_protos_python.peer import chaincode_shim_pb2 as peer_dot_chaincode__shim__pb2
 
 
 class ChaincodeSupportStub(object):

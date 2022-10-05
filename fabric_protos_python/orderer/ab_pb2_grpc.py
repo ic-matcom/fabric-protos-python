@@ -2,8 +2,8 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from common import common_pb2 as common_dot_common__pb2
-from orderer import ab_pb2 as orderer_dot_ab__pb2
+from fabric_protos_python.common import common_pb2 as common_dot_common__pb2
+from fabric_protos_python.orderer import ab_pb2 as orderer_dot_ab__pb2
 
 
 class AtomicBroadcastStub(object):

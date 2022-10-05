@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from common import common_pb2 as common_dot_common__pb2
+from fabric_protos_python.common import common_pb2 as common_dot_common__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x15orderer/cluster.proto\x12\x07orderer\x1a\x13\x63ommon/common.proto\"\x82\x01\n\x0bStepRequest\x12\x36\n\x11\x63onsensus_request\x18\x01 \x01(\x0b\x32\x19.orderer.ConsensusRequestH\x00\x12\x30\n\x0esubmit_request\x18\x02 \x01(\x0b\x32\x16.orderer.SubmitRequestH\x00\x42\t\n\x07payload\"H\n\x0cStepResponse\x12-\n\nsubmit_res\x18\x01 \x01(\x0b\x32\x17.orderer.SubmitResponseH\x00\x42\t\n\x07payload\"F\n\x10\x43onsensusRequest\x12\x0f\n\x07\x63hannel\x18\x01 \x01(\t\x12\x0f\n\x07payload\x18\x02 \x01(\x0c\x12\x10\n\x08metadata\x18\x03 \x01(\x0c\"`\n\rSubmitRequest\x12\x0f\n\x07\x63hannel\x18\x01 \x01(\t\x12\x1b\n\x13last_validation_seq\x18\x02 \x01(\x04\x12!\n\x07payload\x18\x03 \x01(\x0b\x32\x10.common.Envelope\"O\n\x0eSubmitResponse\x12\x0f\n\x07\x63hannel\x18\x01 \x01(\t\x12\x1e\n\x06status\x18\x02 \x01(\x0e\x32\x0e.common.Status\x12\x0c\n\x04info\x18\x03 \x01(\t2B\n\x07\x43luster\x12\x37\n\x04Step\x12\x14.orderer.StepRequest\x1a\x15.orderer.StepResponse(\x01\x30\x01\x42X\n%org.hyperledger.fabric.protos.ordererZ/github.com/hyperledger/fabric-protos-go/ordererb\x06proto3')

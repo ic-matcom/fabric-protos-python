@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from gossip import message_pb2 as gossip_dot_message__pb2
+from fabric_protos_python.gossip import message_pb2 as gossip_dot_message__pb2
 
 
 class GossipStub(object):

@@ -2,8 +2,8 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from peer import proposal_pb2 as peer_dot_proposal__pb2
-from peer import proposal_response_pb2 as peer_dot_proposal__response__pb2
+from fabric_protos_python.peer import proposal_pb2 as peer_dot_proposal__pb2
+from fabric_protos_python.peer import proposal_response_pb2 as peer_dot_proposal__response__pb2
 
 
 class EndorserStub(object):
