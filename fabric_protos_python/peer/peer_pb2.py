@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from peer import proposal_pb2 as peer_dot_proposal__pb2
-from peer import proposal_response_pb2 as peer_dot_proposal__response__pb2
+from fabric_protos_python.peer import proposal_pb2 as peer_dot_proposal__pb2
+from fabric_protos_python.peer import proposal_response_pb2 as peer_dot_proposal__response__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0fpeer/peer.proto\x12\x06protos\x1a\x13peer/proposal.proto\x1a\x1cpeer/proposal_response.proto2O\n\x08\x45ndorser\x12\x43\n\x0fProcessProposal\x12\x16.protos.SignedProposal\x1a\x18.protos.ProposalResponseBR\n\"org.hyperledger.fabric.protos.peerZ,github.com/hyperledger/fabric-protos-go/peerb\x06proto3')

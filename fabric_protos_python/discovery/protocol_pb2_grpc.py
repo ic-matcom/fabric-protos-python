@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from discovery import protocol_pb2 as discovery_dot_protocol__pb2
+from fabric_protos_python.discovery import protocol_pb2 as discovery_dot_protocol__pb2
 
 
 class DiscoveryStub(object):

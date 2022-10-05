@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from peer import chaincode_pb2 as peer_dot_chaincode__pb2
-from peer import proposal_response_pb2 as peer_dot_proposal__response__pb2
+from fabric_protos_python.peer import chaincode_pb2 as peer_dot_chaincode__pb2
+from fabric_protos_python.peer import proposal_response_pb2 as peer_dot_proposal__response__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13peer/proposal.proto\x12\x06protos\x1a\x14peer/chaincode.proto\x1a\x1cpeer/proposal_response.proto\";\n\x0eSignedProposal\x12\x16\n\x0eproposal_bytes\x18\x01 \x01(\x0c\x12\x11\n\tsignature\x18\x02 \x01(\x0c\">\n\x08Proposal\x12\x0e\n\x06header\x18\x01 \x01(\x0c\x12\x0f\n\x07payload\x18\x02 \x01(\x0c\x12\x11\n\textension\x18\x03 \x01(\x0c\"^\n\x18\x43haincodeHeaderExtension\x12)\n\x0c\x63haincode_id\x18\x02 \x01(\x0b\x32\x13.protos.ChaincodeIDJ\x04\x08\x01\x10\x02R\x11payload_visbility\"\xa8\x01\n\x18\x43haincodeProposalPayload\x12\r\n\x05input\x18\x01 \x01(\x0c\x12H\n\x0cTransientMap\x18\x02 \x03(\x0b\x32\x32.protos.ChaincodeProposalPayload.TransientMapEntry\x1a\x33\n\x11TransientMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x0c:\x02\x38\x01\"\x99\x01\n\x0f\x43haincodeAction\x12\x0f\n\x07results\x18\x01 \x01(\x0c\x12\x0e\n\x06\x65vents\x18\x02 \x01(\x0c\x12\"\n\x08response\x18\x03 \x01(\x0b\x32\x10.protos.Response\x12)\n\x0c\x63haincode_id\x18\x04 \x01(\x0b\x32\x13.protos.ChaincodeIDJ\x04\x08\x05\x10\x06R\x10token_operationsBc\n\"org.hyperledger.fabric.protos.peerB\x0fProposalPackageZ,github.com/hyperledger/fabric-protos-go/peerb\x06proto3')
