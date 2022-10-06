@@ -81,7 +81,7 @@ class GatewayServicer(object):
 
     def CommitStatus(self, request, context):
         """The CommitStatus service will indicate whether a prepared transaction previously submitted to
-        the Submit sevice has been committed. It will wait for the commit to occur if it hasn’t already
+        the Submit service has been committed. It will wait for the commit to occur if it hasn’t already
         committed.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)

@@ -5,7 +5,7 @@ Hyperledger Fabric gRPC and Protocol Buffer Bindings for python
 
 You can install the Fabric Protos Bindings for Python from [PyPI](https://pypi.org/project/fabric-protos-python/):
 
-    python -m pip install fabric-protos-python==2.4
+    python -m pip install fabric-protos-python==2.5
 
 The fabric-protos-python is supported on Python 3.7 and above.
 
