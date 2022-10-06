@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fabric-protos-python"
-version = "2.0"
+version = "2.2"
 description = "Hyperledger Fabric gRPC and Protocol Buffer Bindings for python"
 authors = [
     "Institute of Cryptography of the Faculty of Mathematics and Computer Science at University of Havana <kmilo.denis.glez@yandex.com>",
